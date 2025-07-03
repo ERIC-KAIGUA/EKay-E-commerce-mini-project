@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="landingpage.css" rel="stylesheet">
+    <title>E-KAY Clothing Brand</title>
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+          <h3>E-KAY ENTREPRISES</h3>
+        </div>
+
+        <div class="navbar">
+          <ul class="navlinks">
+             <li><a href="#">HOME</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="bestseller.html">BESTSELLERS</a></li>
+         </ul>
+        </div>
+
+       <div class="navbar-icons">
+        <div id="cart-icon">
+                <button><i class='bx bx-cart-alt'></i></button>
+            </div>
+
+            <div id="logoutBtn">
+                <button><i class='bx  bx-arrow-in-left-square-half'></i></button>
+            </div>
+         </div>
+
+     </header>
+
+     
+     <div class="container-1">
+        <div class="con1-right">
+          <h2> E-Kay Clothing Brand</h2>
+          <p>We sell the best local outfits in KE.</p>
+          <button class="buy-btn" id="button"> Buy Now</button>
+        </div>
+
+        <div class="con1-left">
+           <img src="Pictures\Model1.jpg" alt="Model1">
+           <img src="Pictures\Model4.jpg" alt="Model4">
+           <img src="Pictures\Model2.jpg" alt="Model2">
+           
+           <button class="left" onclick="prevSlide()"><i class='bx bx-chevron-left'></i></i></button>
+           <button class="right" onclick="nextSlide()"><i class='bx bx-chevron-right'></i></button>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <div class="con2-head">
+            <h2>Shop by category</h2>
+        </div>
+
+        <div class="con2-items">
+          <div class="items">
+            <img src="Pictures\casual-jacket.jpg" class="category"><br>
+            <p>dark-brown-casual-jacket</p>
+            <p>Ksh.2000</p>
+          </div>
+          <div class="items">
+            <img src="Pictures\adidas.jpg" class="category"><br>
+            <p>adidas-shoes</p>
+            <p>Ksh.2500</p>
+          </div>
+          <div class="items" id="item-3">
+            <img src="Pictures\athletejacket.png" class="category"><br>
+            <p>athlete-jacket</p>
+            <p>Ksh.1200</p>
+          </div>
+          <div class="items" id="item-4">
+            <img src="Pictures\red highheels.jpg"  class="category"><br>
+            <p>red-high-heels</p>
+            <p>Ksh.2000</p>
+          </div>
+        </div>
+        <button class="view-all" id="view-all-button">View all</button>
+      </div>
+
+      <div class="container-3">
+        <div class="con3-head">
+          <h2>Why Choose Us?</h2>
+      </div>
+
+      <div class="con3-icons">
+        <div class="icons" id="icon-1">
+          <i class='bx bxs-truck'></i>
+          <div class="info">
+             <p>Free Shipping</p>
+          </div>
+        </div>
+
+        <div class="icons" id="icon-2">
+          <i class='bx bx-map'></i>
+          <div class="info">
+             <p>Delivery Countrywide</p>
+          </div>
+        </div>
+
+        <div class="icons" id="icon-3">
+          <i class='bx bxs-discount'></i>
+          <div class="info">
+             <p>Offer Refunds</p>
+          </div>
+        </div>
+
+        <div class="icons" id="icon-4">
+          <i class='bx bxs-lock-alt'></i>
+          <div class="info">
+             <p>Secure Payments</p>
+          </div>
+        </div>
+
+        <div class="icons" id="icon-5">
+          <i class='bx bxs-check-circle'></i>
+          <div class="info">
+             <p>Top Quality Products</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <div id="cart-tab"  class="hidden">
+        <h1>Shopping-Cart</h1>
+
+        <div class="list-cart" id="cartItems">
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+       
+        <div class="btn">
+          <button id="close" onclick= "clearCart()">CLOSE</button>
+          <button id="check-out" onclick= "checkout()">CHECK-OUT</button>
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="cols">
+          <div class="about-cols">
+            <h3>E-KAY ENTREPRISES</h3>
+          </div>
+
+          <div class="div-cols">
+            <h4>SHOP</h4>
+            <a href="jacket.html">Jackets</a>
+            <a href="shirts.html">Shirts</a>
+            <a href="shoes.html">Shoes</a>
+            <a href="shorts.html">Shorts</a>
+          </div>
+
+          <div class="div-cols">
+            <h4>COMPANY RESOURCES</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Returns & Exchange</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div class="div-cols">
+            <h4>SOCIAL MEDIA</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Tik Tok</a>
+            <a href="#">X</a>
+            
+          </div>
+
+        </div>
+      </footer>
+
+    <script src="landingpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kay ENTERPRISES</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="shorts.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h3>E-KAY ENTREPRISES</a></h3>
+      </div>
+
+      <div class="navbar">
+        <ul class="navlinks">
+           <li><a href="landingpage.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="bestseller.html">BESTSELLERS</a></li>
+       </ul>
+      </div>
+
+     <div class="navbar-icons">
+          <div id="cart-icon">
+              <button><i class='bx bx-cart-alt'></i></button>
+          </div>
+           <div id="logoutBtn">
+              <button><i class='bx  bx-arrow-in-left-square-half'></i></button>
+          </div>
+      </div>
+
+   </header>
+   <div class="container-1">
+      <div class="info">
+         <h1>SHORTS FOR YOU</h1>
+      </div>
+
+      <div class="jackets">
+        <div class="items">
+            <img src="Pictures\banana shorts.jpg" class="category"><br>
+              <h2>Banana-Shorts</h2>
+             <div class="price">Ksh.1200</div>
+            <button class="add-cart" onclick="addToCart('banana shorts', 'Banana-Shorts', 'Ksh.1200')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\basketball shorts.jpg" class="category"><br>
+              <h2>Basketball-Shorts</h2>
+             <div class="price">Ksh.1500</div>
+            <button class="add-cart" onclick="addToCart('basketball shorts', 'Basketball-Shorts', 'Ksh.1500')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\beach shorts.jpg" class="category"><br>
+              <h2>Beach-Shorts</h2>
+             <div class="price">Ksh.1200</div>
+            <button class="add-cart" onclick="addToCart('beach shorts', 'Beach-Shorts', 'Ksh.1200')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\soccer shorts.jpg" class="category"><br>
+             <h2>Soccer-Shorts</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('soccer shorts', 'Soccer-Shorts', 'Ksh.1000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\sweatpants.jpg" class="category"><br>
+              <h2>Sweatpants</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('sweatpants', 'Sweatpants', 'Ksh.1000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\bluetrousers.jpg" class="category"><br>
+              <h2>Official-Pants</h2>
+             <div class="price">Ksh.1200</div>
+            <button class="add-cart" onclick="addToCart('bluetrousers', 'Official-Pants', 'Ksh.1200')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\jeans shorts.jpg" class="category"><br>
+              <h2>Denim-Shorts</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('jeans shorts', 'Denim-Shorts', 'Ksh.1000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\khaki shorts.jpg" class="category"><br>
+             <h2>Khaki-Shorts</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('Khaki shorts', 'Khaki-Shorts', 'Ksh.1000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\men jeans.jpg" class="category"><br>
+             <h2>Men's-Jeans</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('men jeans', 'Mens-Jeans', 'Ksh.1000')">Add To Cart</button>
+        </div>
+      </div>
+   </div>
+
+   <div id="cart-tab"  class="hidden">
+        <h1>Shopping-Cart</h1>
+
+        <div class="list-cart" id="cartItems">
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+       
+        <div class="btn">
+          <button id="close" onclick= "clearCart()">CLOSE</button>
+          <button id="check-out" onclick= "checkout()">CHECK-OUT</button>
+        </div>
+      </div>
+
+   <footer>
+      <div class="cols">
+        <div class="about-cols">
+          <h3>E-KAY ENTREPRISES</h3>
+        </div>
+
+        <div class="div-cols">
+          <h4>SHOP</h4>
+          <a href="jacket.html">Jackets</a>
+          <a href="shirts.html">Shirts</a>
+          <a href="shoes.html">Shoes</a>
+          <a href="shorts.html">Shorts</a>
+        </div>
+
+        <div class="div-cols">
+          <h4>COMPANY RESOURCES</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Returns & Exchange</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="div-cols">
+          <h4>SOCIAL MEDIA</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Tik Tok</a>
+          <a href="#">X</a>
+          
+        </div>
+
+      </div>
+    </footer>
+    <script src="shorts.js"></script>
+</body>
+</html>

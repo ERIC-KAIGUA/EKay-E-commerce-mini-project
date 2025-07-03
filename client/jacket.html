@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kay ENTERPRISES</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="jacket.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h3>E-KAY ENTREPRISES</a></h3>
+      </div>
+
+      <div class="navbar">
+        <ul class="navlinks">
+           <li><a href="landingpage.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="bestseller.html">BESTSELLERS</a></li>
+       </ul>
+      </div>
+
+     <div class="navbar-icons">
+      <div id="cart-icon">
+              <button><i class='bx bx-cart-alt'></i></button>
+          </div>
+
+          <div id="logoutBtn">
+              <button><i class='bx  bx-arrow-in-left-square-half'></i></button>
+          </div>
+       </div>
+
+   </header>
+   <div class="container-1">
+      <div class="info">
+         <h1>JACKETS FOR YOU</h1>
+      </div>
+
+      <div class="jackets">
+        <div class="items">
+            <img src="Pictures\brown khaki pants.jpg" class="category"><br>
+            <h2>Light Brown Casual Jacket</h2>
+             <div class="price">Ksh.2000</div>
+            <button class="add-cart" onclick="addToCart('brown khaki pants', 'Light Brown Casual Jacket', 'Ksh.2000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\casual-jacket.jpg" class="category"><br>
+             <h2>Dark Brown Casual Jacket</h2>
+             <div class="price">Ksh.2000</div>
+            <button class="add-cart" onclick="addToCart('casual-jacket', 'Dark Brown Casual Jacket', 'Ksh.2000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\casual jacket.jpg" class="category"><br>
+           <h2>Black-Jacket</h2>
+             <div class="price">Ksh.1200</div>
+            <button class="add-cart" onclick="addToCart('casual jacket', 'Black-Jacket', 'Ksh.1200')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\athletejacket.png" class="category"><br>
+            <h2>Athlete-Jacket</h2>
+             <div class="price">Ksh.1200</div>
+            <button class="add-cart" onclick="addToCart('athletejacket', 'Athlete-Jacket', 'Ksh.1200')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\black jacket.jpg" class="category"><br>
+          <h2>Black-Hoddie-Jumper</h2>
+             <div class="price">Ksh.2000</div>
+            <button class="add-cart" onclick="addToCart('black jacket', 'Black-Hoddie-Jumper', 'Ksh.2000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\wool jacket.jpg" class="category"><br>
+             <h2>Denim-Woolen-Jacket</h2>
+             <div class="price">Ksh.2500</div>
+            <button class="add-cart" onclick="addToCart('wool jacket', 'Denim-Woolen-Jacket', 'Ksh.2500')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\rain jacket.jpg" class="category"><br>
+            <h2>Rain-Jacket</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('rain jacket', 'Rain-Jacket', 'Ksh.1000')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\puffy jacket.jpg" class="category"><br>
+           <h2>Puffy-Jacket</h2>
+             <div class="price">Ksh.1200</div>
+            <button class="add-cart" onclick="addToCart('puffy jacket', 'Puffy-Jacket', 'Ksh.1200')">Add To Cart</button>
+        </div>
+        <div class="items">
+            <img src="Pictures\denim jacket.jpg" class="category"><br>
+             <h2>Denim-Jacket</h2>
+             <div class="price">Ksh.1000</div>
+            <button class="add-cart" onclick="addToCart('denim jacket', 'Denim-Jacket', 'Ksh.1000')">Add To Cart</button>
+        </div>
+      </div>
+   </div>
+
+    <div id="cart-tab"  class="hidden">
+        <h1>Shopping-Cart</h1>
+
+        <div class="list-cart" id="cartItems">
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+       
+        <div class="btn">
+          <button id="close" onclick= "clearCart()">CLOSE</button>
+          <button id="check-out" onclick= "checkout()">CHECK-OUT</button>
+        </div>
+      </div>
+
+   <footer>
+      <div class="cols">
+        <div class="about-cols">
+          <h3>E-KAY ENTREPRISES</h3>
+        </div>
+
+        <div class="div-cols">
+          <h4>SHOP</h4>
+          <a href="jacket.html">Jackets</a>
+          <a href="shirts.html">Shirts</a>
+          <a href="shoes.html">Shoes</a>
+          <a href="shorts.html">Shorts</a>
+        </div>
+
+        <div class="div-cols">
+          <h4>COMPANY RESOURCES</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Returns & Exchange</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="div-cols">
+          <h4>SOCIAL MEDIA</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Tik Tok</a>
+          <a href="#">X</a>
+          
+        </div>
+
+      </div>
+    </footer>
+    <script src="jacket.js"></script>
+</body>
+</html>
